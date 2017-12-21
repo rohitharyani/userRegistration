@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecarus.userregistration.ViewListMode"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:text="@string/app_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:typeface="sans"
+            android:id="@+id/ECARUS"
+            android:layout_marginLeft="30dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_light"
+            android:gravity="center_vertical"
+            android:textStyle="bold|italic"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:padding="5dp"
+                android:text="Approximate bill :"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:padding="5dp"
+                android:id="@+id/ListTotal"
+                android:gravity="end"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height= "0.5dp"
+            android:background="@color/colorAccent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/linearLayout4"
+            android:id="@+id/horizontalLine"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cartRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/horizontalLine"
+            android:background="@color/background"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

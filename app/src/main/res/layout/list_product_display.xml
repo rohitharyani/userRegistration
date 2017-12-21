@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fruits_and_vegetables"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecarus.userregistration.ListFruitsAndVegetables"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:text="@string/app_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:typeface="sans"
+            android:id="@+id/ECARUS"
+            android:layout_marginLeft="30dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/background_light"
+            android:gravity="center_vertical"
+            android:textStyle="bold|italic"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/recommendation"
+            android:id="@+id/RecommendationImageButton"
+            android:background="@color/colorPrimary" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/product_category_shopping_cart"
+            android:id="@+id/productShoppingCartImageButton"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/background">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/productRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

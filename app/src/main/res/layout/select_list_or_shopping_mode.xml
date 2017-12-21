@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shoping_mode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecarus.userregistration.SelectListOrShoppingMode"
+    android:background="@color/colorPrimaryDark">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:text="@string/app_name"
+                android:layout_width="0dp"
+                android:typeface="sans"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/ECARUS"
+                android:layout_marginLeft="30dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"
+                android:gravity="center_vertical"
+                android:textStyle="bold|italic"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/previousOrderList"
+                android:src="@drawable/view_list"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="10dp"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:id="@+id/profileImageButton"
+                android:src="@drawable/product_category_profile"
+                android:background="@color/colorPrimary"
+                android:paddingRight="15dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="50dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcomeName"
+                android:textColor="@color/white"
+                android:typeface="sans"
+                android:textSize="19sp"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:gravity="clip_vertical|center_horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/listMode"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:typeface="sans"
+                android:layout_marginBottom="1dp"
+                android:padding="10dp"
+                android:text="Create Your Shopping List"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:background="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/background"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:gravity="end|center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/money"
+                        android:layout_marginBottom="15dp"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/saving_book"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/list_mode"
+                    android:padding="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="start"
+                    android:paddingTop="15dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/purchase_order" />
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/checked"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/purse"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/shoppingMode"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:typeface="sans"
+                android:layout_marginBottom="1dp"
+                android:padding="10dp"
+                android:text="Start Shopping"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:background="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/background"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:gravity="end|center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/invoice"/>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/cash_register"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/rupee"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shopping_mode"
+                    android:padding="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="start|center"
+                    android:paddingTop="15dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/pos_terminal" />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/receipt"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

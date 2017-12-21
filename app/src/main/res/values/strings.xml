@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ecarus</string>
+    <string name="disclaimer">** Please maintain MINIMUM wallet balance
+        equal to your approximate bill amount!</string>
+    <string name="approximate_bill">* Approximate bill details are calculated on original price of the product.</string>
+    <string name="rating_why">Help us serve you better by providing your valuable feedback.</string>
+    <string name="rating_terms">
+        * If you fail to provide this rating your default EXPERIENCE VALUE shall be "0".
+    \n** This rating is for the products that you have purchased from the store and has no concern with Ecarus under any circumstances.</string>
+
+    <string name="textSmall">?android:attr/textAppearanceSmall</string>
+    <string name="textMedium">?android:attr/textAppearanceMedium</string>
+    <string name="textLarge">?android:attr/textAppearanceLarge</string>
+</resources>

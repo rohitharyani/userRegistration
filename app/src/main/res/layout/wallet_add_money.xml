@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ecarus.userregistration.WalletAddMoney"
+    android:background="@color/colorPrimaryDark">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:text="@string/app_name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:typeface="sans"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/ECARUS"
+                android:layout_marginLeft="30dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"
+                android:gravity="center_vertical"
+                android:textStyle="bold|italic"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/walletBalance"
+                    android:padding="10dp"
+                    android:textSize="22sp"
+                    android:typeface="sans"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add money to your Ecarus wallet"
+                    android:textSize="20sp"
+                    android:typeface="sans"
+                    android:padding="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:text="100 +"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Button100"
+                        android:typeface="sans"
+                        android:padding="15dp"
+                        android:textSize="18sp"
+                        android:background="@drawable/rectangle1"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:layout_weight="1"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_horizontal"/>
+
+                    <Button
+                        android:text="500 +"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Button500"
+                        android:padding="15dp"
+                        android:typeface="sans"
+                        android:textSize="18sp"
+                        android:background="@drawable/rectangle1"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:layout_weight="1"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="15sp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="7dp"
+                        android:gravity="center_horizontal"/>
+
+                    <Button
+                        android:text="1000 +"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Button1000"
+                        android:padding="15dp"
+                        android:typeface="sans"
+                        android:textSize="18sp"
+                        android:background="@drawable/rectangle1"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:layout_weight="1"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/walletMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:gravity="center_horizontal"
+                    android:hint="Example ₹10"
+                    android:imeOptions="actionGo"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:typeface="sans" />
+
+
+                <Button
+                    android:text="Add money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/walletAddMoneyButton"
+                    android:padding="15dp"
+                    android:textSize="18sp"
+                    android:typeface="sans"
+                    android:background="@drawable/rectangle1"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_weight="1"
+                    android:layout_margin="30dp"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

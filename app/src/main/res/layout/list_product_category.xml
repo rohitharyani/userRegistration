@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:text="@string/app_name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:typeface="sans"
+                android:id="@+id/ECARUS"
+                android:layout_marginLeft="30dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"
+                android:gravity="center_vertical"
+                android:textStyle="bold|italic"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/recommendation"
+                android:id="@+id/RecommendationImageButton"
+                android:background="@color/colorPrimary" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:id="@+id/productCategoryCartImageButton"
+                android:src="@drawable/product_category_shopping_cart"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="5dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/relativeLayout2"
+            android:layout_marginTop="45dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please select a category..."
+                android:id="@+id/productCategoryTextView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fruitsAndVegetablesButton"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/productCategoryTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:clickable="true">
+
+
+                <ImageView
+                      android:layout_alignParentLeft="true"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="5dp"
+                    android:src="@drawable/fav"
+                    android:layout_weight="2"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fruits and vegetables"
+                    android:textStyle="bold|italic"
+                    android:typeface="sans"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:layout_margin="5dp"
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dairyProductsButton"
+                android:padding="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/fruitsAndVegetablesButton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:clickable="true">
+
+
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/dp"
+                    android:layout_weight="2"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dairy products"
+                    android:textStyle="bold|italic"
+                    android:typeface="sans"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frozenFoodButton"
+                android:padding="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/dairyProductsButton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:clickable="true">
+
+
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ff"
+                    android:layout_weight="2"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Frozen food"
+                    android:textStyle="bold|italic"
+                    android:typeface="sans"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:padding="15dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/groceryAndStaplesButton"
+                android:padding="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/frozenFoodButton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:clickable="true">
+
+
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/gas"
+                    android:layout_weight="2"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grocery and staples"
+                    android:textStyle="bold|italic"
+                    android:typeface="sans"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:layout_margin="5dp"
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/personalCareAndHouseholdButton"
+                android:padding="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/groceryAndStaplesButton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:clickable="true">
+
+
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/pcahh"
+                    android:layout_weight="2"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal care and \n household"
+                    android:textStyle="bold|italic"
+                    android:typeface="sans"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:id="@+id/textView2"
+                    android:gravity="start|center_vertical"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

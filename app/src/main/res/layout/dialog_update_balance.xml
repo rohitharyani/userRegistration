@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:typeface="sans"
+        android:text="You don't have sufficient balance to continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:typeface="sans"
+        android:text="Would you like to add money now?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height= "1dp"
+        android:id="@+id/horizontalLine"
+        android:layout_below="@+id/quantityLinearLayout"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/noButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:typeface="sans"
+            android:background="@android:color/transparent"
+            android:text="No"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height= "match_parent"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/yesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:typeface="sans"
+            android:background="@drawable/rectangle3"
+            android:text="Yes"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
